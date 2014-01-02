@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Media Queries : em
+    </title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      *, *:before, *:after {
+        -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+       }
+      body {
+        font-family: avenir;
+        margin: 0;
+        padding: 0;
+      }
+
+      img { max-width: 100%; }
+
+      .paxs { padding: .25rem; }
+      .pas { padding: 1rem; }
+
+      .center {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 48rem;
+      }
+
+      .wi-25 { width: 25%; }
+      .wi-50 { width: 50%; }
+      .wi-100 { width: 100%; }
+
+      .fl { float: left; }
+
+      .f1 { font-size: 2rem; }
+      .f2 { font-size: 1.5rem; }
+      .f3 { font-size: 1.25rem; }
+      .f4 { font-size: 1rem; }
+      .b { font-weight: bold; }
+
+      .lh-title { line-height: 1.3; }
+      .lh-copy { line-height: 1.6; }
+
+      @media screen and (min-width: 48em) {
+        .wi-25-ns { width: 25%; }
+        .wi-50-ns { width: 50%; }
+        .wi-100-ns { width: 100%; }
+      }
+
+      @media screen and (min-width: 48em) and (max-width: 64em) {
+        .wi-25-m { width: 25%; }
+        .wi-50-m { width: 50%; }
+        .wi-100-m { width: 100%; }
+      }
+
+      @media screen and (min-width: 64em)  {
+        .wi-25-l { width: 25%; }
+        .wi-50-l { width: 50%; }
+        .wi-100-l { width: 100%; }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="pas center">
+      <h1 class="f1">This is obviously a headline</h1>
+      <p class="f2 lh-copy"><em>With an intro statement of very obvious importance. Much impress.</em></p>
+      <p class="f3 lh-copy">
+        Let me get this straight. You think that your client, one of the wealthiest, most powerful men in the world is secretly a vigilante who spends his nights beating criminals to a pulp with his bare hands and your plan is to blackmail this person? Good luck.
+      </p>
+
+      <p class="f3 lh-copy">
+        There's a storm coming, Mr. Wayne. You and your friends better batten down the hatches, because when it hits, you're all going to wonder how you ever thought you could live so large and leave so little for the rest of us.
+      </p>
+      <div>
+        <div class="fl wi-100 wi-50-ns paxs">
+          <img src="img/img.jpg">
+          <h1 class="b f4">SMALL HEADLINE</h1>
+          <p>
+            Now, our operation is small but there is a lot of potential for aggressive expansion. So which of you fine gentlemen would like to join our team? Oh. There's only one spot open right now, so we're gonna have... tryouts.
+          </p>
+        </div>
+        <div class="fl wi-100 wi-50-ns paxs">
+          <img src="img/banner.jpg">
+          <h1 class="b f4">ANOTHER SMALL HEADLINE</h1>
+          <p>
+            Every year, I took a holiday. I went to Florence, this cafe on the banks of the Arno. Every fine evening, I would sit there and order a Fernet Branca. I had this fantasy, that I would look across the tables and I would see you there with a wife maybe a couple of kids. You wouldn't say anything to me, nor me to you. But we would both know that you've made ...
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
